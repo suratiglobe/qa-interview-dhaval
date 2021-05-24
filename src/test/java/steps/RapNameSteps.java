@@ -14,7 +14,7 @@ public class RapNameSteps {
     public void loadPage(String pageName) {
         switch (pageName) {
             case "My Rap Name":
-                rapNameHomePage.loadRapNameHomePage();
+                rapNameHomePage.open();
                 break;
 
             default:

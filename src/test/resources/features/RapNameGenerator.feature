@@ -24,10 +24,10 @@ Feature: Rap Name generator
     Then I should see my Rap name
 
     Examples:
-    | FirstName   | RapNameType             |
-    | Jeremy      | Suggest Male Rap Name   |
-    | Ashley      | Suggest Female Rap Name |
-    | Matthew     | Suggest Male Rap Name   |
+      | FirstName | RapNameType             |
+      | Jeremy    | Suggest Male Rap Name   |
+      | Ashley    | Suggest Female Rap Name |
+      | Matthew   | Suggest Male Rap Name   |
 
   Scenario: User views New Rap Name when select nick name and submit name for male
 

@@ -2,13 +2,12 @@ package pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
+@DefaultUrl("http://www.myrapname.com/")
 public class RapNameHomePage extends PageObject {
-
-    private String url = "http://www.myrapname.com/";
 
     private String firstRapName;
 
@@ -35,10 +34,6 @@ public class RapNameHomePage extends PageObject {
 
     @FindBy(css = "div table tr:nth-child(2) td:nth-child(1) div")
     private WebElementFacade secondRapNameText;
-
-    public void loadRapNameHomePage() {
-        getDriver().get(url);
-    }
 
     public void verifyInputFieldsDisplayed() {
         firstNameTextBox.isDisplayed();

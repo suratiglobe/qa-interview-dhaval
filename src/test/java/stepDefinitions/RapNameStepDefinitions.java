@@ -6,16 +6,11 @@ import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
 import steps.RapNameSteps;
 import io.cucumber.java.en.Given;
-import net.thucydides.core.annotations.Managed;
-import org.openqa.selenium.WebDriver;
 
 public class RapNameStepDefinitions {
 
     @Steps
     RapNameSteps rapNameSteps;
-
-    @Managed(driver = "chrome")
-    WebDriver driver;
 
     @Given("^I am on (.*) homePage$")
     public void i_am_on_homePage(String pageName) {
