@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Rap Name generator" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-05-24T06:39:46" hostname="Dhavals-MBP.lan1" time="56.7">
+  <properties/>
+  <testcase name="User views error when try to generate rap name without entering fist name" classname="Rap Name generator" time="17.379"/>
+  <testcase name="User can generate Rap Name with only first name #1" classname="Rap Name generator" time="7.647"/>
+  <testcase name="User can generate Rap Name with only first name #2" classname="Rap Name generator" time="6.292"/>
+  <testcase name="User can generate Rap Name with only first name #3" classname="Rap Name generator" time="6.81"/>
+  <testcase name="User views New Rap Name when select nick name and submit name for male" classname="Rap Name generator" time="10.122"/>
+  <testcase name="User views New Rap Name each time when submit name for female with last initial" classname="Rap Name generator" time="8.45"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[May 24, 2021 1:39:47 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+1621838388118	geckodriver	INFO	Listening on 127.0.0.1:37000
+1621838388235	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/ll/sd4z61vd5y7dt4nypyvjmgy40000gn/T/rust_mozprofileWXNO1v"
+1621838389106	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621838391053	Marionette	INFO	Listening on port 49773
+1621838391120	Marionette	WARN	TLS certificate errors will be ignored for this session
+May 24, 2021 1:39:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+1621838419120	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 145: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 239: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+JavaScript error: https://www.myrapname.com/, line 164: ReferenceError: TWTR is not defined
+JavaScript error: https://www.myrapname.com/, line 264: ReferenceError: urchinTracker is not defined
+]]></system-err>
+</testsuite>

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Rap Name generator","User views error when try to generate rap name without entering fist name","SUCCESS","2021-05-24T01:39:47.046938-05:00[America/Chicago]","0.0","17.12"
+"Rap Name generator","User can generate Rap Name with only first name","SUCCESS","2021-05-24T01:40:04.246658-05:00[America/Chicago]","0.0","20.74"
+"Rap Name generator","User views New Rap Name when select nick name and submit name for male","SUCCESS","2021-05-24T01:40:24.991721-05:00[America/Chicago]","0.0","10.12"
+"Rap Name generator","User views New Rap Name each time when submit name for female with last initial","SUCCESS","2021-05-24T01:40:35.113429-05:00[America/Chicago]","0.0","8.45"
