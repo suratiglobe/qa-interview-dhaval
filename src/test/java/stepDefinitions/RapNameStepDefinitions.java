@@ -52,7 +52,7 @@ public class RapNameStepDefinitions {
         rapNameSteps.verifyNewRapNamePrepended();
     }
 
-    @And("I enter my last initial '(.*)'$")
+    @And("^I enter my last initial '(.*)'$")
     public void i_Enter_My_Last_Initial(String lastInitial) {
         rapNameSteps.enterLastInitial(lastInitial);
     }

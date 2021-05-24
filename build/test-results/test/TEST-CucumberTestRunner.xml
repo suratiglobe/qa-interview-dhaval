@@ -4,16 +4,12 @@
   <system-out><![CDATA[
 6 Scenarios (?[32m6 passed?[0m)
 44 Steps (?[32m44 passed?[0m)
-0m56.854s
+1m2.740s
 
 
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-1621838444619	Marionette	INFO	Stopped listening on port 49773
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
 ]]></system-err>
 </testsuite>
