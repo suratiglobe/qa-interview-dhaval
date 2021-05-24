@@ -21,6 +21,9 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
 
+sourceCompatibility = 11
+targetCompatibility = 11
+
 ext {
     serenityCoreVersion = '2.4.24'
     serenityCucumberVersion = '2.4.24'
