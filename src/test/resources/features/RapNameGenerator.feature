@@ -16,6 +16,19 @@ Feature: Rap Name generator
     And I click Suggest Male Rap Name
     Then I should see error 'You must enter your first name.'
 
+  Scenario Outline: User views error when try to generate rap name with invalid name
+
+    When I enter my first name '<FirstName>'
+    And I click Suggest Male Rap Name
+    Then I should see error 'You must enter your first name.'
+
+    Examples:
+      | FirstName    |
+      | 1242546547   |
+      | {}:>}        |
+      | @@**         |
+      | Dhaval@#$%^& |
+
   Scenario Outline: User can generate Rap Name with only first name
 
     When I enter my first name '<FirstName>'

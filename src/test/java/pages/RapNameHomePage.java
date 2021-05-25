@@ -30,7 +30,7 @@ public class RapNameHomePage extends PageObject {
     private WebElementFacade femaleRapNameButton;
 
     @FindBy(css = "div table div h1")
-    private WebElementFacade firstRapNameText;
+    private WebElementFacade latestRapNameText;
 
     @FindBy(css = "div table tr:nth-child(2) td:nth-child(1) div")
     private WebElementFacade secondRapNameText;
@@ -74,12 +74,12 @@ public class RapNameHomePage extends PageObject {
     }
 
     public void verifyRapNameTextDisplayed() {
-        firstRapName = firstRapNameText.getText();
-        assertThat(firstRapNameText.getText()).isNotEmpty();
+        firstRapName = latestRapNameText.getText();
+        assertThat(latestRapNameText.getText()).isNotEmpty();
     }
 
     public void verifyNewRapNamePrepended() {
-        assertThat(firstRapNameText.getText()).isNotEqualTo(secondRapNameText.getText());
+        assertThat(latestRapNameText.getText()).isNotEqualTo(secondRapNameText.getText());
         assertThat(firstRapName).isEqualTo(secondRapNameText.getText());
     }
 }

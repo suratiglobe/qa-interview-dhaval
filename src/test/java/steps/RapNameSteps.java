@@ -8,8 +8,11 @@ public class RapNameSteps {
 
     RapNameHomePage rapNameHomePage;
 
+    /* SLF4J is not working with IntelliJ Community Edition */
     static Logger logger = Logger.getLogger(RapNameSteps.class.getName());
 
+    /* This should be part of Setup or base page but just for this project keeping it here */
+    /* Used switch case as we can use the same step later for other pages */
     @Step
     public void loadPage(String pageName) {
         switch (pageName) {
