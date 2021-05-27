@@ -58,7 +58,13 @@ Feature: Rap Name generator
     And I enter my last initial 'S'
     And I click Suggest Female Rap Name
     Then I should see my Rap name
-    And I click Suggest Female Rap Name
+    When I click Suggest Female Rap Name
+    Then I should see new Rap name prepended
+    When I click Suggest Female Rap Name
+    Then I should see new Rap name prepended
+    When I click Suggest Female Rap Name
+    Then I should see new Rap name prepended
+    When I click Suggest Female Rap Name
     Then I should see new Rap name prepended
 
 

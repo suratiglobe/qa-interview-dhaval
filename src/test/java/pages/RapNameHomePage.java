@@ -1,5 +1,6 @@
 package pages;
 
+import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -10,6 +11,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class RapNameHomePage extends PageObject {
 
     private String firstRapName;
+    private int counter=1;
 
     @FindBy(css = "form input[name='firstname']")
     private WebElementFacade firstNameTextBox;
@@ -31,9 +33,6 @@ public class RapNameHomePage extends PageObject {
 
     @FindBy(css = "div table div h1")
     private WebElementFacade latestRapNameText;
-
-    @FindBy(css = "div table tr:nth-child(2) td:nth-child(1) div")
-    private WebElementFacade secondRapNameText;
 
     public void verifyInputFieldsDisplayed() {
         firstNameTextBox.isDisplayed();
@@ -79,7 +78,8 @@ public class RapNameHomePage extends PageObject {
     }
 
     public void verifyNewRapNamePrepended() {
-        assertThat(latestRapNameText.getText()).isNotEqualTo(secondRapNameText.getText());
-        assertThat(firstRapName).isEqualTo(secondRapNameText.getText());
+        counter++;
+        assertThat(latestRapNameText.getText()).isNotEqualTo(find(By.cssSelector("div table tr:nth-child("+ counter +") td:nth-child(1) div")).getText());
+        assertThat(find(By.cssSelector("div table tr:nth-child("+ counter +") td:nth-child(1) div")).getText()).isEqualTo(firstRapName);
     }
 }
